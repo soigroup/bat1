@@ -12,5 +12,6 @@
     ],
     "require": {
         "laravel/framework": "^11.29"
+        "laravel/sanctum": "^3.0"
     }
 }
