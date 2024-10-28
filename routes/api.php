@@ -1,5 +1,7 @@
 <?php
-
+header("Access-Control-Allow-Origin: https://bat-phi.vercel.app/"); // استبدل بالنطاق الفعلي لتطبيق Vercel الخاص بك
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ClickerController;

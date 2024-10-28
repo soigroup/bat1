@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => ['https://bat-phi.vercel.app/'],
 
     'allowed_origins_patterns' => [],
 
