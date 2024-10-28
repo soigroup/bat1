@@ -14,8 +14,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-    // Route for email verification prompt
-    Route::get('/verify-email', [EmailVerificationPromptController::class, '__invoke'])
+    // تعديل توجيه البريد الإلكتروني ليستخدم `show` بدلاً من `__invoke`
+    Route::get('/verify-email', [EmailVerificationPromptController::class, 'show'])
         ->middleware('auth')
         ->name('verification.notice');
 
