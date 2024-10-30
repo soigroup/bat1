@@ -2,10 +2,8 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Schema; // إضافة هذا السطر
-use Laravel\Sanctum\PersonalAccessToken;
-use Laravel\Sanctum\Sanctum;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -22,9 +20,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // تعيين الطول الافتراضي للسلاسل النصية
-        Schema::defaultStringLength(191); // إضافة هذا السطر
-
-        Sanctum::usePersonalAccessTokenModel(PersonalAccessToken::class);
+        // التعليق على السطر التالي
+        // Vite::prefetch(concurrency: 3);
     }
 }
